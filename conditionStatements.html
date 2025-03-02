@@ -38,31 +38,44 @@
 
     //--------------------------Nested If else----------------------------
     //---------------------Marks Sheet---------------------------
-    let sName = prompt("Enter Your Name");
-    let rNmbr = prompt("Enter Your Roll Number");
-    let engMarks = parseInt(prompt("Enter English Marks"));
-    let urduMarks = parseInt(prompt("Enter Urdu Marks"));
-    let csMarks = parseInt(prompt("Enter Computer Science Marks"));
-    let obtainedMarks = engMarks + urduMarks + csMarks;
-    let totalMarks = 300;
-    let percentage = (obtainedMarks / totalMarks) * 100;
-    if (percentage >= 90 && percentage <= 100) {
-      alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: A+`);
-      if (percentage >= 90 && percentage <= 100) { //Nested if else
-        alert("You're won the Car Congratulation");
-      }
-    }
-    else if (percentage >= 70 && percentage <= 89) {
-      alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: A`);
-    }
-    else if (percentage >= 60 && percentage <= 69) {
-      alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: B`);
-    }
-    else if (percentage >= 50 && percentage <= 59) {
-      alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: C`);
-    }
-    else if (percentage > 50) {
-      alert("You Are Fail");
+    // let sName = prompt("Enter Your Name");
+    // let rNmbr = prompt("Enter Your Roll Number");
+    // let engMarks = parseInt(prompt("Enter English Marks"));
+    // let urduMarks = parseInt(prompt("Enter Urdu Marks"));
+    // let csMarks = parseInt(prompt("Enter Computer Science Marks"));
+    // let obtainedMarks = engMarks + urduMarks + csMarks;
+    // let totalMarks = 300;
+    // let percentage = (obtainedMarks / totalMarks) * 100;
+    // if (percentage >= 90 && percentage <= 100) {
+    //   alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: A+`);
+    //   if (percentage >= 90 && percentage <= 100) { //Nested if else
+    //     alert("You're won the Car Congratulation");
+    //   }
+    // }
+    // else if (percentage >= 70 && percentage <= 89) {
+    //   alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: A`);
+    // }
+    // else if (percentage >= 60 && percentage <= 69) {
+    //   alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: B`);
+    // }
+    // else if (percentage >= 50 && percentage <= 59) {
+    //   alert(`Student Name: ${sName} \n Roll Number: ${rNmbr} \n English Marks: ${engMarks} \n Urdu Marks: ${urduMarks} \n Computer Science: ${csMarks} \n Total: ${obtainedMarks} \n Grade: C`);
+    // }
+    // else if (percentage > 50) {
+    //   alert("You Are Fail");
+    // }
+    //--------------------------------switch Statement-------------------------------------
+    let fruit = prompt("Enter Fruit");
+    switch (fruit) {
+      case "mango":
+        console.log("Price: 50$");
+        break;
+      case "orange":
+      case "banana":
+        console.log("Price: 20$");
+        break;
+      default:
+        console.log("Sorry this fruit is Unavailible");
     }
 
 
