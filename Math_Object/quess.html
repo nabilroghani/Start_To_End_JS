@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Game</title>
+</head>
+
+<body>
+
+
+  <script>
+    let num = parseInt(prompt("Enter Number"));
+    let ran = Math.floor(Math.random() * 10);
+
+    while (true) {
+      if (num === ran) {
+        alert(`Congratulation 🎉 \n Number is: ${ran}`);
+        break;
+      }
+      else if (num === "quit") {
+        break;
+      }
+      else {
+        alert("Try Again ");
+      }
+      num = parseInt(prompt("Try Again. Please Enter Again"));
+    }
+  </script>
+</body>
+
+</html>
